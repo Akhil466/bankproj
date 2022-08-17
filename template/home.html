@@ -1,0 +1,25 @@
+
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+<div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel" >
+  <div class="carousel-inner" style="width:600px">
+    <div class="carousel-item active">
+      <img class="d-block w-100" src="{% static 'post1.png' %}"  alt="First slide">
+    </div>
+
+
+
+  </div>
+</div>
+<center>
+    <div class="center" width="1000px">
+
+    <a href="{% url 'djangobankapp:login' %} " class="btn btn" style="width: 38rem;background-color:cbf83e;">Login here.....</a>
+  </div>
+
+
+</center><br>
+    {% endblock %}
